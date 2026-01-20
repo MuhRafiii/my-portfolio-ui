@@ -4,7 +4,7 @@ import { AuthProvider } from "./contexts/AuthContext";
 import PrivateRoute from "./lib/PrivateRoute";
 import { Dashboard } from "./pages/admin/Dashboard";
 import { Experiences } from "./pages/admin/Experiences";
-import Login from "./pages/admin/Login";
+import { Login } from "./pages/admin/Login";
 import { Profile } from "./pages/admin/Profile";
 import { Projects } from "./pages/admin/Projects";
 import { Techs } from "./pages/admin/Techs";
