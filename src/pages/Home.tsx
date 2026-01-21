@@ -363,8 +363,8 @@ export function Home() {
                     className="w-full h-48 lg:h-80"
                   />
                   <CardContent className="space-y-6 px-8">
-                    <h2 className="text-xl font-bold">{p.name}</h2>
-                    <p className="text-muted-foreground text-justify">
+                    <h2 className="text-lg md:text-xl font-bold">{p.name}</h2>
+                    <p className="text-muted-foreground text-sm text-justify">
                       {p.description}
                     </p>
                     <div className="flex flex-wrap gap-2">
