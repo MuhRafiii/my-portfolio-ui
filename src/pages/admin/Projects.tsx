@@ -24,7 +24,7 @@ export function Projects() {
       console.error(error);
       Swal.fire(
         "Error",
-        error?.response?.data?.message || "Something went wrong"
+        error?.response?.data?.message || "Something went wrong",
       );
     } finally {
       setLoading(false);
@@ -91,9 +91,13 @@ export function Projects() {
               </div>
               <p>
                 <span className="font-semibold">Repository: </span>
-                <a href={p.github} className="hover:text-blue-700 underline">
-                  {p.github}
-                </a>
+                {p.github ? (
+                  <a href={p.github} className="hover:text-blue-700 underline">
+                    {p.github}
+                  </a>
+                ) : (
+                  "Private Repository"
+                )}
               </p>
               <p>
                 <span className="font-semibold">Demo: </span>

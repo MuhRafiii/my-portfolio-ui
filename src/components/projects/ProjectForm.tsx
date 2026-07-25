@@ -52,7 +52,8 @@ export function ProjectForm({ mode, initialData, onSuccess }: ProjectProps) {
       }
 
       if (mode === "edit" && initialData) {
-        await api.put(`/projects/${initialData.id}`, formData);
+        const res = await api.put(`/projects/${initialData.id}`, formData);
+        console.log(res);
       } else {
         await api.post("/projects", formData);
       }
