@@ -119,7 +119,11 @@ export function Home() {
                   Let's Talk
                 </Button>
               </a>
-              <a href={profile?.resume} target="_blank">
+              <a
+                href={profile?.resume}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <Button className="w-42 text-base">
                   <Download className="w-4 h-4" />
                   Donwload CV
@@ -205,7 +209,11 @@ export function Home() {
                   Let's Talk
                 </Button>
               </a>
-              <a href={profile?.resume} target="_blank">
+              <a
+                href={profile?.resume}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <Button className="w-full text-base">
                   <Download className="w-4 h-4" />
                   Donwload CV
@@ -261,7 +269,11 @@ export function Home() {
                   Let's Talk
                 </Button>
               </a>
-              <a href={profile?.resume} target="_blank">
+              <a
+                href={profile?.resume}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <Button size="lg" className="w-48 text-lg py-6">
                   <Download className="w-5 h-5" />
                   Donwload CV
@@ -410,6 +422,8 @@ export function Home() {
                     {p.github ? (
                       <a
                         href={p.github}
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className="flex gap-2 text-sm text-blue-500 hover:text-blue-700 items-center"
                       >
                         <Github className="w-4 h-4" />
@@ -425,6 +439,8 @@ export function Home() {
                     {p.demo ? (
                       <a
                         href={p.demo}
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className="flex items-center gap-2 text-sm text-blue-500 hover:text-blue-700"
                       >
                         <ExternalLink className="w-4 h-4" />
