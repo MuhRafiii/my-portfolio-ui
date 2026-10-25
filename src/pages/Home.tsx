@@ -30,6 +30,7 @@ export function Home() {
   const [openMenu, setOpenMenu] = useState(false);
   const { theme, toggleTheme } = useTheme();
   const menuRef = useRef<HTMLDivElement>(null);
+  const name = profile?.name.split(" ");
 
   useEffect(() => {
     function handleClickOutside(e: MouseEvent) {
@@ -236,9 +237,15 @@ export function Home() {
           </div>
 
           <div className="space-y-6">
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold">
-              {profile?.title}
-            </h2>
+            <div className="space-y-2 sm:space-y-3 lg:space-y-4">
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold">
+                Hi there! I'm {name ? name[1] : undefined} 👋
+              </h2>
+
+              <h3 className="text-xl sm:text-2xl lg:text-3xl font-semibold">
+                {profile?.title}
+              </h3>
+            </div>
 
             <p className="text-muted-foreground lg:text-lg text-justify">
               {profile?.about}
